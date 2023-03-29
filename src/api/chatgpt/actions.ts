@@ -1,0 +1,8 @@
+const actionTypes = {
+  GET_ANSWER: "GET_ANSWER",
+  GET_ANSWER_SUCCESS: "GET_ANSWER_SUCCESS",
+  GET_ANSWER_FAIL: "GET_ANSWER_FAIL",
+  GET_ANSWER_RESET: "GET_ANSWER_RESET",
+};
+
+export default actionTypes;

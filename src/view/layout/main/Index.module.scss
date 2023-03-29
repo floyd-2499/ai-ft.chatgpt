@@ -1,0 +1,44 @@
+@import '../styles/variables/style';
+
+.layout-main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+
+    .left-menu {
+        min-width: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .right-content {
+        width: calc(100vw - 250px);
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .top-head {
+            width: 100%;
+            min-height: 60px !important;
+            background-color: beige;
+        }
+
+        .footer-container {
+            width: 100%;
+            min-height: 60px !important;
+            background-color: cadetblue;
+        }
+
+        .page-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            min-height: calc(100vh - 120px);
+            overflow-y: scroll;
+
+        }
+    }
+}
