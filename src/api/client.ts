@@ -1,7 +1,7 @@
 import axios, { AxiosError, AxiosResponse } from "axios";
 
 const ChatGPTApiClient = axios.create({
-  baseURL: "https://api.openai.com/v1/engines/davinci/completions",
+  baseURL: "https://api.openai.com/v1/engines",
 });
 
 ChatGPTApiClient.interceptors.request.use((request) => {
@@ -17,4 +17,4 @@ ChatGPTApiClient.interceptors.response.use(
   }
 );
 
-export default ChatGPTApiClient
+export default ChatGPTApiClient;
