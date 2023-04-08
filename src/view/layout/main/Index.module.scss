@@ -4,17 +4,21 @@
     display: flex;
     width: 100vw;
     height: 100vh;
+    background-color: $bg-color;
 
     .left-menu {
-        min-width: 260px;
+        width: 250px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column;
+        background-color: $white-bg;
+        position: sticky;
+            top: 0;
     }
 
-    .right-content {
-        width: calc(100vw - 250px);
+    .main-content {
+        width: calc(100vw - 600px);
         height: 100%;
         display: flex;
         justify-content: space-between;
@@ -23,13 +27,8 @@
         .top-head {
             width: 100%;
             min-height: 60px !important;
-            background-color: beige;
-        }
-
-        .footer-container {
-            width: 100%;
-            min-height: 60px !important;
-            background-color: cadetblue;
+            position: sticky;
+            top: 0;
         }
 
         .page-container {
@@ -40,5 +39,16 @@
             overflow-y: scroll;
 
         }
+    }
+
+    .right-tools {
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        background-color: $white-bg;
+        position: sticky;
+            top: 0;
     }
 }

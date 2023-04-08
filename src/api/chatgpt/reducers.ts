@@ -44,3 +44,5 @@ function getChatReducer(
       return state;
   }
 }
+
+export default getChatReducer
